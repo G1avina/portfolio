@@ -1,0 +1,61 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    
+    text-align: left;
+
+    border-style: solid;
+    background-color: white;
+    border-radius:10px;
+    
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+
+}
+
+.cv{
+
+    background-color: white;
+}
+
+.contact{
+    text-align: center;
+}
+
+.exp{
+
+    margin-left: 50px;
+    
+
+}
+
+.edu{
+
+    margin-left: 50px;
+
+}
+
+.lang{
+
+    text-align: center;
+
+}
+
+.ref{
+
+    text-align: center;
+
+}
+
+
+
+
+h1 {
+    color: #333;
+    text-align: center;
+}
