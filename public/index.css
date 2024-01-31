@@ -1,11 +1,41 @@
+
+
+
+
+html{
+
+    border-style: solid;
+    border-bottom-style: none;
+    border-width: 30px;
+    min-height: 900px;
+    font-family: "Arial";
+}
+
+head{
+    background-color: black;
+    opacity: 1;
+    color: white;
+}
+
 body{
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 50px;
+    
+
+    background-color: rgb(116, 184, 166);
+    opacity: 1;
 }
 
 .title{
 
+    background-color: rgb(111, 111, 111);
+    opacity: 1;
     text-align: center;
+    vertical-align: baseline;
+    color: white;
+    border-style: solid;
+    border-color: rgb(111, 111, 111);
+    border-radius:30px;
+    
 
 }
