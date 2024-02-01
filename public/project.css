@@ -1,9 +1,54 @@
+html{
+
+    border-style: solid;
+    border-color:rgb(40, 30, 128);
+    border-bottom-style: none;
+    border-width: 30px;
+    min-height: 900px;
+    font-family: "Arial";
+}
+
+head{
+    background-color: rgb(163, 163, 163);
+    opacity: 1;
+    color: white;
+}
+
 body{
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 50px;
+    font-size: 30px;
+    
+
+    background-color: rgb(65, 94, 151);
+    opacity: 1;
 }
 
 .title{
+
+    background-color: rgb(40, 30, 128);
+    opacity: 1; 
     text-align: center;
+    vertical-align: baseline;
+    color: white;
+    border-style: solid;
+    border-color: rgb(111, 111, 111);
+    border-radius:30px;
+    
+
 }
+
+.images{
+   
+    display: inline-block;
+}
+
+.image{
+
+    width:300px;
+    height:200px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+
+}   

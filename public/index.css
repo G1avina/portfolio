@@ -5,6 +5,7 @@
 html{
 
     border-style: solid;
+    border-color:rgb(40, 30, 128);
     border-bottom-style: none;
     border-width: 30px;
     min-height: 900px;
@@ -12,7 +13,7 @@ html{
 }
 
 head{
-    background-color: black;
+    background-color: rgb(163, 163, 163);
     opacity: 1;
     color: white;
 }
@@ -20,16 +21,17 @@ head{
 body{
     margin-left: 100px;
     margin-right: 100px;
+    font-size: 30px;
     
 
-    background-color: rgb(116, 184, 166);
+    background-color: rgb(65, 94, 151);
     opacity: 1;
 }
 
 .title{
 
-    background-color: rgb(111, 111, 111);
-    opacity: 1;
+    background-color: rgb(40, 30, 128);
+    opacity: 1; 
     text-align: center;
     vertical-align: baseline;
     color: white;
@@ -37,5 +39,20 @@ body{
     border-color: rgb(111, 111, 111);
     border-radius:30px;
     
+
+}
+
+.images{
+   
+    display: inline-block;
+}
+
+.image{
+
+    width:300px;
+    height:200px;
+    margin-left: 40px;
+    margin-right: 40px;
+
 
 }

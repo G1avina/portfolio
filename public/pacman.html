@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>PacMan</title>
+
+</head>
+
+
+<body>
+    <div id ="game"></div>
+
+    <script>
+        // Your JavaScript code goes here
+        let pacPos = 0;
+        const max_x = 5;
+        const  min_x = -5;
+        let fruit = 0;
+        let score = 0;
+
+
+
+        function rand(){
+            return Math.floor(Math.random() * (max_x+1 - min_x) + min_x);
+        }
+
+        function fruitPos(){
+            while(fruit == pacPos)
+            {fruit = rand();}
+            return;
+        }
+        
+        
+
+
+        function drawBoard() {
+            if(pacPos == fruit){
+                score += 5
+                console.log(score);
+                fruitPos();
+                
+            }
+
+            let s = ""
+            //document.getElementById('game').textContent = '';
+            for (let i = -5; i <= 5; i++){
+                if (i == pacPos){
+                    s= s+"x";
+                }else if(i == fruit){
+                    s = s+"@";
+                }else{
+                s = s + ".";
+                }
+            }
+            document.getElementById('game').textContent = s;
+            return;
+        }
+
+        function move(event) {
+
+            if (event.key == 'ArrowRight'){
+                if (pacPos == max_x){
+                    pacPos = -5;
+                }else{
+                    pacPos += 1;
+                }
+                
+            } else if (event.key == 'ArrowLeft'){
+                if (pacPos == min_x){
+                    pacPos = 5;
+                }else{
+                    pacPos -= 1;
+                }
+               
+            }
+            console.log(pacPos);
+            //console.log(rand());
+            drawBoard();
+            //document.addEventListener('keydown', move);
+
+        }
+    
+        // Add event listener for keydown events
+        fruitPos();
+        drawBoard();
+        document.addEventListener('keydown', move);
+        
+        
+    
+
+
+    </script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><a href = "project.html">go back</a>
+
+</body>
+
+
+
+</html>
